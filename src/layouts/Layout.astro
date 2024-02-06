@@ -1,4 +1,5 @@
 ---
+import '@fontsource/ubuntu';
 
 interface Props {
 	title: string;
@@ -22,49 +23,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 
-<style is:global>
-	@font-face {
-  font-family: 'Robofan Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Robofan Free.otf'); 
-}
-
-@font-face {
-  font-family: 'Roboto-Medium';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Roboto-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: 'Roboto-Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Roboto-Regular.ttf'); 
-}
-
-@font-face {
-	font-family: "Poppins-Regular";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url("/fonts/Poppins-Regular.ttf");
-}
-
-h1, h2, h3, h4, h5, h6{
-	font-family:"Roboto-Medium", sans-serif;
-}
-
-p, span, a{
-	font-family:"Poppins-Regular", sans-serif;
-}
-
-
-.logo {
-	font-family: 'Robofan Free', sans-serif;
-}
+<style>
+	body {
+		font-family: 'Ubuntu', sans-serif;
+	}
 </style>
